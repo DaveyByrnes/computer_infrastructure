@@ -1,5 +1,3 @@
-
-# copy code from problem sheet here
 #!/usr/bin/env python3
 
 import yfinance as yf
@@ -62,7 +60,7 @@ def plot_data():
     plt.grid(True)
 
     # timestamp filename
-    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    timestamp = datetime.now().strftime("%Y +%m%d-%H%M%S")
     file_path = f"plots/stock_prices_{timestamp}.png"
     os.makedirs("plots", exist_ok=True)
     plt.savefig(file_path)
