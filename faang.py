@@ -46,7 +46,7 @@ def plot_data():
     # read the latest data file
     df = pd.read_csv(file_path, header=[0,1], index_col=0)
 
-    # extract closing data
+    # extract closing data -
     close_data = df['Close']
 
     # plot closing prices
